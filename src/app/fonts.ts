@@ -1,11 +1,11 @@
-import { Inter } from 'next/font/google'
+import { Figtree } from 'next/font/google'
 
-export const headingFont = Inter({
+export const headingFont = Figtree({
     subsets: ['latin'],
     display: 'swap',
 })
 
-export const bodyFont = Inter({
+export const bodyFont = Figtree({
     subsets: ['latin'],
     display: 'swap',
 })

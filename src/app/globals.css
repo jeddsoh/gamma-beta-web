@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+header {
+  max-width: 1600px !important;
+}

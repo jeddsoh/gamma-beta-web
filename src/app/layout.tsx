@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { bodyFont } from "./fonts";
 import "./globals.css";
 import { Providers } from "./providers";
+import MainNav from "./components/navigation/MainNav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bodyFont.className}>
-        <Providers>{children}</Providers>
+      <body className={`dark bg-background text-foreground ${bodyFont.className}`}>
+        <Providers>
+          <MainNav />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -15,6 +15,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        'orange-glow': '0 0 24px 0px rgba(249, 115, 22, 0.3)',
+      },
     },
   },
   darkMode: "class",
@@ -26,8 +29,6 @@ const config: Config = {
       defaultExtendTheme: "light", // default theme to extend on custom themes
       layout: {
         radius: {
-          small: "2px", // rounded-small
-          medium: "4px", // rounded-medium
         },
       }, // common layout tokens (applied to all themes)
       themes: {
@@ -39,7 +40,7 @@ const config: Config = {
             primary: {
               //... 50 to 900
               foreground: "#fff",
-              DEFAULT: "#0ea5e9",
+              DEFAULT: "#f97316",
             },
           }, // light theme colors
         },
@@ -51,7 +52,10 @@ const config: Config = {
             primary: {
               //... 50 to 900
               foreground: "#fff",
-              DEFAULT: "#0ea5e9",
+              DEFAULT: "#f97316",
+            },
+            secondary: { //Tailwind Blue
+              900: "#1e3a8a",
             },
           }, // dark theme colors
         },
